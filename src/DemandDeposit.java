@@ -1,4 +1,4 @@
-public class DemandDeposit extends Account {
+public abstract class DemandDeposit extends Account {
     // constructor for single owner account
     public DemandDeposit(String firstName, int anAccountNumber, int anInitialDeposit) {
         super(firstName, anAccountNumber, anInitialDeposit);
