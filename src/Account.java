@@ -13,10 +13,6 @@ public abstract class Account {
 
     // constructor for joint-owner account
     public Account(String firstName, String secondName, int anAccountNumber, int anInitialDeposit) {
-//        this.name1 = firstName;
-//        this.name2 = secondName;
-//        this.accountNumber = anAccountNumber;
-//        this.initialDeposit = anInitialDeposit;
         this(firstName, anAccountNumber, anInitialDeposit);
         this.name2 = secondName;
 
