@@ -20,14 +20,11 @@ public class CertificateOfDeposit extends Account {
 
     @Override
     public String toString() {
-        /*
-        if (this.getName2() == null) {
-            return "Account owner: " + getName1() + "\nAccount Number: #" + getAccountNumber() + "\nInitial Deposit $" + getInitialDeposit() + "\nEnd Date: " + endDate;
-        }
-        return "Account owners: " + getName1() + " and " + getName2() + "\nAccount Number: #" + getAccountNumber() + "\nInitial Deposit: $" + getInitialDeposit() + "\nEnd Date: " + getEndDate() ;
 
-         */
-        return "Account owner(s): " + getName1() + " and " + (this.getName2() == null? "" : getName2()) + "\nAccount Number: #" + getAccountNumber() + "\nInitial Deposit: $" + getInitialDeposit() + "\nEnd Date: " + getEndDate() ;
+
+        String s = super.toString();
+        return s += "\nInitial Deposit: $" + getInitialDeposit() + "\nEnd Date: " + getEndDate() ;
+
     }
 
     public void extendTermOfCd(String newDate) {
